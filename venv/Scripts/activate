@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="O:\HACKING\PYPI_projects\selenium_wbs\venv"
+VIRTUAL_ENV="O:\HACKING\PYPI_projects\wds_utilities\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
