@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: wds-utilities
+Version: 1.0.1
+Summary: Selenium webdriver shortcuts
+Home-page: https://github.com/SilasPDJ/pypi_project_nums_primos
+Author: silaspdj
+Author-email: silsilinhas@gmail.com
+Project-URL: Bug Tracker, https://github.com/SilasPDJ/pypi_project_nums_primos/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pypi_project_nums_primos
+
+```
+from wbs import WDShorcuts
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service)
+ddriver = WDSShorcuts(driver)
+
+select_based = ddriver.webdriverwait_el_by(
+    By.CSS_SELECTOR, '[data-baseweb="select"]')
+ddriver.send_keys_anywhere(Keys.TAB)
+# and much more
+```
